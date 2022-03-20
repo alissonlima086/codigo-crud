@@ -28,7 +28,8 @@ public class Cadastro {
             System.out.println("4- Excluir um jogo");
             System.out.println("5- Sair");
 
-            System.out.println("Opção: ");
+            System.out.println("--------------------");
+            System.out.println("-> Opção: ");
             varMenu = leitor.nextInt();
 
             switch (varMenu) {
@@ -39,7 +40,7 @@ public class Cadastro {
                     newGame.setNome(leitor.nextLine());
 
                     System.out.println("Plataforma: ");
-                    newGame.setPlataforma(leitor.next());
+                    newGame.setPlataforma(leitor.nextLine());
 
                     System.out.println("Preço pago: ");
                     newGame.setPreco(leitor.nextFloat());
@@ -74,7 +75,7 @@ public class Cadastro {
                     newGame1.setNome(leitor.nextLine());
 
                     System.out.println("Plataforma: ");
-                    newGame1.setPlataforma(leitor.next());
+                    newGame1.setPlataforma(leitor.nextLine());
 
                     System.out.println("Preço pago: ");
                     newGame1.setPreco(leitor.nextFloat());
@@ -94,7 +95,6 @@ public class Cadastro {
                 }
                 case 5 -> varControlLoop = 1;
             }
-
 
         }
 
